@@ -34,3 +34,12 @@ module "ec2" {
   instance_profile_name = module.iam.instance_profile_name
   instance_type         = "t3.micro"
 }
+module "github_oidc" {
+  source = "../../modules/github-oidc"
+
+  project_name      = var.project_name
+  environment       = var.environment
+  github_owner      = var.github_owner
+  github_repository = var.github_repository
+}
+# CI/CD workflow test
