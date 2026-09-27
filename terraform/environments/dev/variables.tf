@@ -50,3 +50,14 @@ variable "private_subnet_cidrs" {
     "10.0.12.0/24"
   ]
 }
+variable "github_owner" {
+  description = "GitHub account or organization that owns the repository"
+  type        = string
+  default     = "Draco1000"
+}
+
+variable "github_repository" {
+  description = "GitHub repository name"
+  type        = string
+  default     = "aws-terraform-platform-foundation"
+}

@@ -21,3 +21,6 @@ output "ec2_public_ip" {
 output "ec2_public_dns" {
   value = module.ec2.public_dns
 }
+output "github_actions_role_arn" {
+  value = module.github_oidc.github_actions_role_arn
+}
